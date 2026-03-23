@@ -1,0 +1,114 @@
+*{
+    padding: 0; /*espaçamento dentro dos elementos */
+    margin: 0;/* espaçamento entre os elementos */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 60, 161); /* cor de fundo da página*/ 
+    color: rgb(209, 178, 238); /*cor da fonte*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu {
+    display: flex;/*cria um container flex (ajuda a posicionar outros elementos */
+    justify-content: center; /*alinha na horizontal*/
+    align-items: center;
+    height: 50px;
+    background-color: rgb(112, 60, 161);
+    border-bottom: solid rgb(193, 230, 255) 2px;
+    font-size: 18px;
+    
+}
+
+.menu a {
+    color: rgb(224, 191, 255);
+    text-decoration: none;
+}
+/*:hover é o que acontece quando passa o mouse por cima*/
+.menu a:hover {
+     color: white;
+
+}
+
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 50px;
+    border-bottom: solid rgb(193, 230, 255) 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover; /*cortar o que sobra da imagim*/
+}
+
+.texto {
+    background-color: rgba(182, 165, 255, 0.459);
+    height: 200px;
+    width: 33%;
+    text-align: justify;
+}
+
+.texto h3 {
+    font-size: 24;
+}
+
+.text p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.texto button {
+    background-color: cornflowerblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 15px;
+}
+.texto button a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.459)
+}
+
+.texto button:hover {
+    background-color: rgb(183, 170, 255);
+    cursor: pointer;
+}
+
+.conhecimento{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: blueviolet;
+
+}
+.conhecimento .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conhecimentos {
+    display: flex;
+    justify-content: center;
+}
+
+.conhecimento img {
+    width: 200px;
+}
+
